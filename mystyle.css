@@ -82,16 +82,7 @@ hr {
     margin: 0 30px auto;
 }
 
-@media (max-width: 600px) {
-    .mynavbar {
-        padding: 5px; 
-        font-size: 14px; 
-    }
 
-    .mynav-links li {
-        margin: 0 10px; 
-    }
-}
 
 
 .ctn {
@@ -188,13 +179,7 @@ hr {
         
 }
 
-@media (max-width: 400px) {
 
-    .header-Topic {
-        text-shadow: 5px 2px 0px rgba(0, 0, 0, 0.7);
-    }
-
-}
 
 /*   Part of Main   */
 
@@ -371,28 +356,6 @@ video {
 }
 
 
-@media (max-width: 600px) {
-    video {
-        width: 95%;
-        height: auto;
-    }
-}
-
-@media (max-width: 400px) {
-    video {
-        width: 100%;
-        height: auto;
-    }
-}
-
-
-.Chibi{
-    text-align: center;
-    width: 30px;
-}
-
-
-
 /*   My Journey  */
 
 .Journey{
@@ -425,22 +388,6 @@ video {
 .header-Topic2 h2 {
     font-size: 5vmin;
         
-}
-
-@media (max-width: 768px) {
-
-    .header-Topic2 {
-        text-shadow: 5px 2px 0px rgba(0, 0, 0, 0.7);
-    }
-
-}
-
-@media (max-width: 400px) {
-
-    .header-Topic2 {
-        text-shadow: 5px 2px 0px rgba(0, 0, 0, 0.7);
-    }
-
 }
 
 .Journey1{
@@ -660,7 +607,98 @@ video {
 }
 
 
-@media (max-width: 768px) {
+/* ------ Home page For Mobile ------ */
+
+@media (max-width: 360px) and (orientation: portrait) { /*For Mobile*/
+   
+    .logo{
+        padding: 5px;
+    }
+
+    .mynav-links {
+        flex-direction: column; 
+        align-items: flex-end; 
+        width: 100%; 
+    }
+
+    .mynav-links li {
+        margin: 10px 0; /
+    }
+
+    .ctn {
+        padding: 10px 5px; 
+    }
+    
+    .header-Topic {
+        text-shadow: 2px 3px 0px rgba(3, 2, 0, 0.8); 
+    }
+
+    .header-Topic h1 {
+        font-size: 8vh;
+    }
+
+    .header-Topic h2 {
+        font-size: 3.5vh; 
+    }
+
+   
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .My_container {
+        flex-direction: column; 
+        padding: 10px;
+    }
+
+    .My_containter_item {
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+
+    p {
+        padding: 5px 0px;
+        font-size: 2.5vh;
+    }
+
+    h4 {
+        font-size: 3.2vh;
+        margin: 6px auto;
+    }
+
+    .Title {
+    
+        font-size: 2.2vh;
+        margin-block: -6%;
+        padding: 5px;
+
+    }
+
+    .My_containter_item h1{
+    
+        font-size: 3.2vh;
+    
+    }
+    
+    .My_containter_item p{
+    
+        text-align: left;
+        font-size: 2.5vh;
+    
+    }
+
+    .footer-content a {
+
+        padding: 10px 15px;
+
+    }
+
+    .detail1{
+
+        font-size: 2.2vh;
+    }
+
     .myfooter {
         flex-direction: column; /* เปลี่ยนเป็นแนวตั้ง */
         align-items: center; /* จัดกึ่งกลางคอลัมน์ */
@@ -674,10 +712,90 @@ video {
     footer {
         padding: 20px; /* ลด padding สำหรับหน้าจอเล็ก */
     }
+
+  
+
+}
+
+@media screen and (max-width: 640px) and (orientation: landscape) {
+
+
+    .mynav-links li {
+        margin: 0px 5px; 
+    }
+
+    .ctn {
+        padding: 10px 5px; 
+    }
+    
+    .header-Topic {
+        text-shadow: 2px 3px 0px rgba(3, 2, 0, 0.8); 
+    }
+
+    .header-Topic h1 {
+        font-size: 15vh;
+    }
+
+    .header-Topic h2 {
+        font-size: 8vh; 
+    }
+   
+
+    p {
+        padding: 0px 0px;
+        font-size: 3.8vh;
+    }
+
+    h4 {
+        font-size: 4.6vh;
+      
+    }
+
+    .Title {
+    
+        font-size: 6vh;
+        margin-block: -3%;
+        padding: 5px;
+
+    }
+
+
+
+    .My_containter_item h1{
+    
+        font-size: 4vh;
+    
+    }
+    
+    .My_containter_item p{
+    
+        font-size: 3.5vh;
+    
+    }
+
+    .footer-content a {
+
+        padding: 10px 15px;
+
+    }
+
+    .detail1{
+
+        font-size: 3.5vh;
+    }
+
+    video {
+        width: 130%;
+        height: auto;
+    }
+
+   
 }
 
 
 
+
+/* ------ Home page For Tablet ------ */
 
 
 
